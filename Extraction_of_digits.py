@@ -3,6 +3,7 @@
     1- Reversing (Palindrome)
     2- Counting the Digits
     3- Armstrong Number
+    4 - To find the factors or divisors
 """
 
 '''
@@ -49,18 +50,16 @@ print(int(val+1))
 
 '''
 
+'''
 # 3 - Armstrong Number
 
 armstrong_number = 123
 copy_number=armstrong_number
-
 total_digits = 0
-
 while copy_number>0:
     rem=copy_number%10
     total_digits+=1
     copy_number = copy_number//10
-
 copy_number=armstrong_number
 check = 0
 while copy_number>0:
@@ -73,5 +72,22 @@ if check == armstrong_number:
     print(check,True)
 else:
     print(check,False)
-
         
+'''
+
+# 4 - To find the factors or divisors
+
+
+num=10
+l=[]
+
+for i in range(1,num+1):
+    if num%i==0:
+        l.append(i)
+
+print("The factors are", l)
+
+# By List comprehensions
+
+l1= [i for i in range(1,num+1) if num%i==0]
+print(l1)
