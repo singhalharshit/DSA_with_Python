@@ -66,8 +66,46 @@ print(l1)
 
 """
 
-# 8. Slice the list to get the middle 4 elements.
-l = [11,12,13,14,15,16,17,18,19,20]
 
-for i in range(len(l)//2):
-    l[]
+"""
+# 8. Slice the list to get the middle 4 elements.
+l = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39]
+
+
+x= len(l)//2
+print(x)
+
+print(l[x-2:x+2])
+
+"""
+
+"""
+# 9. Print all even-indexed elements using a loop.
+
+l = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39]
+
+even_indexed_item = []
+for i in range(len(l)):
+    if i%2==0:
+        even_indexed_item.append(l[i])
+
+print(even_indexed_item)
+
+"""
+
+
+"""
+# 10. Create a list of 5 inputs from user and print it
+
+l=[]
+
+count =0
+
+while count<5:
+    user = input("Enter your value: ")
+    l.append(user)
+    count+=1
+
+print(l)
+    
+"""
