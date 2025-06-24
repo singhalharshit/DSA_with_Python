@@ -194,10 +194,18 @@ my_list = [10, -5, 22, 0, 7, 10, -3, 14, 22, 8, 7, 19, -5, 3, 0, 14, 25, 18, 8, 
 unique_list  = []
 
 for i in range(len(my_list)):
-    if my_list.count(my_list[i]):
-        my_list.remove(my_list[i])
+    print(my_list[i],':',my_list.count(my_list[i]))
+    if my_list.count(my_list[i]) >1:
+        print(my_list.__delitem__(i))
     else:
         unique_list.append(my_list[i])
+
+# for i in range(len(my_list)-1):
+#     print(my_list[i],':',my_list.count(my_list[i]))
+#     if my_list.count(my_list[i])>1:
+#         my_list.remove(my_list[i])
+#     else:
+#         unique_list.append(my_list[i])
         
 
 print(unique_list)
