@@ -188,24 +188,60 @@ print(l)
 """
 
 
+"""
 # 16. Print only the unique numbers from a list.
 
 my_list = [10, -5, 22, 0, 7, 10, -3, 14, 22, 8, 7, 19, -5, 3, 0, 14, 25, 18, 8, -1, 33, 19, 3, -7, 25, 18, 42, -1, 33, 5]
 unique_list  = []
 
-for i in range(len(my_list)):
-    print(my_list[i],':',my_list.count(my_list[i]))
+for i in range(len(my_list)-1,-1,-1):
     if my_list.count(my_list[i]) >1:
-        print(my_list.__delitem__(i))
+        my_list.pop(i)
     else:
         unique_list.append(my_list[i])
 
-# for i in range(len(my_list)-1):
-#     print(my_list[i],':',my_list.count(my_list[i]))
-#     if my_list.count(my_list[i])>1:
-#         my_list.remove(my_list[i])
+
+
+# for i in my_list:
+#     if i in unique_list:
+#         pass
 #     else:
-#         unique_list.append(my_list[i])
-        
+#         unique_list.append(i)
+
 
 print(unique_list)
+
+l=[5, 42, -7, 33, -1, 18, 25, 3, 19, 8, 14, -3, 7, 0, 22, -5, 10]
+l1=[10, -5, 22, 0, 7, -3, 14, 8, 19, 3, 25, 18, -1, 33, -7, 42, 5]
+print(sorted(l) == sorted(l1))
+
+"""
+
+
+"""
+# 17. Find the second largest number in the list.
+
+my_list = [10, -5, 22, 0, 7, 10, -3, 14, 22, 8, 7, 19, -5, 3, 0, 14, 25, 18, 8, -1, 33, 19, 3, -7, 25, 18, 42, -1, 33, 5]
+
+my_list.sort()
+print(my_list[-2])
+
+# l = sorted(my_list)
+# print(l[-2])
+
+"""
+
+
+# 18. Sort the list in ascending order without using .sort().
+
+my_list = [10, -5, 22, 0, 7, 10, -3, 14, 22, 8, 7, 19, -5, 3, 0, 14, 25, 18, 8, -1, 33, 19, 3, -7, 25, 18, 42, -1, 33, 5]
+sorted_list = []
+
+for i in range(len(my_list)):
+    for j in range(len(my_list)):
+        if my_list[i]> my_list[j]:
+            pass
+        else:
+            sorted_list.append(my_list[i])
+
+print(sorted_list)
