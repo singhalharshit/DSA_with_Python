@@ -232,16 +232,51 @@ print(my_list[-2])
 """
 
 
+"""
 # 18. Sort the list in ascending order without using .sort().
 
 my_list = [10, -5, 22, 0, 7, 10, -3, 14, 22, 8, 7, 19, -5, 3, 0, 14, 25, 18, 8, -1, 33, 19, 3, -7, 25, 18, 42, -1, 33, 5]
 sorted_list = []
+i = len(my_list)
 
-for i in range(len(my_list)):
-    for j in range(len(my_list)):
-        if my_list[i]> my_list[j]:
-            pass
-        else:
-            sorted_list.append(my_list[i])
+while i>0:
+    sorted_list.append(min(my_list))
+    my_list.remove(min(my_list))
+    i-=1
 
 print(sorted_list)
+
+"""
+
+"""
+# 19. Merge two lists and remove duplicates
+
+list1 = [8, 3, 12, 5, 7]
+list2 = [4, 7, 9, 3, 10]
+list3 = []
+
+# print(set(list1+list2))
+
+# Incase if output is also needed in list
+
+for i in (list1+list2):
+    if i not in list3:
+        list3.append(i)
+
+print(sorted(list3))
+
+"""
+
+
+
+# 20. Create a list of only words that start with 'A' from a sentence
+
+sentence = "An amazing artist arrived at the ancient arena after an adventure."
+print(sentence.startswith('A'))
+l=[]
+
+for i in range(len(sentence)):
+    if sentence[i] == sentence.startswith('A'):
+        print(sentence[i])
+        l.append(sentence.startswith('A'))
+
