@@ -268,15 +268,12 @@ print(sorted(list3))
 """
 
 
-
+"""
 # 20. Create a list of only words that start with 'A' from a sentence
 
 sentence = "An amazing artist arrived at the ancient arena after an adventure."
-print(sentence.startswith('A'))
-l=[]
+words_starting_with_a = [word for word in sentence.split() if word.lower().startswith('a')]
 
-for i in range(len(sentence)):
-    if sentence[i] == sentence.startswith('A'):
-        print(sentence[i])
-        l.append(sentence.startswith('A'))
+print(words_starting_with_a)
 
+"""
