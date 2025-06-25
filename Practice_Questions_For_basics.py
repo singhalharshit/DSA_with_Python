@@ -310,3 +310,56 @@ for i in range(k):
 print(l)
 
 """
+
+
+"""
+# 23. Find all pairs in a list that sum to a given number.
+
+numbers = [2, 7, 4, 5, 1, 3, 6]
+target_sum = 9
+pair = []
+seen = set()
+
+for i in numbers:
+    complement = target_sum - i
+    if complement in numbers and complement not in seen:
+        pair.append([i, complement])
+        seen.add(i)
+        seen.add(complement)
+
+print(pair)
+
+"""
+
+
+"""
+# 24. Check if a list is a palindrome.
+
+num_list = [1, 2, 3, 2, 1]
+rev_list=[]
+
+for i in range(len(num_list)-1,-1,-1):
+    rev_list.append(num_list[i])
+
+if num_list == rev_list:
+    print(True)
+else:
+    print(False)
+
+
+# Additional Question for me - 24. Check if a num is a palindrome.
+
+
+num = 121
+rev_num = 0 
+
+while num!=0:
+    rem=num%10
+    rev_num = (rev_num*10 )+rem
+    num = num//10
+    
+
+print(rev_num) 
+
+"""
+
