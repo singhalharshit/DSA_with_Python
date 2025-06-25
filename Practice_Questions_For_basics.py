@@ -380,4 +380,28 @@ print(d)
 
 """
 
+"""
+# 26. Find the common elements in two lists without using sets.
 
+list1 = [3, 6, 2, 8, 4, 7]
+list2 = [5, 4, 9, 2, 1, 6]
+common_list = []
+for i in list1:
+    if i in list2:
+        common_list.append(i)
+    
+print(common_list)
+
+"""
+
+# 27. Flatten a nested list like [[1,2],[3,4],[5]] to [1,2,3,4,5].
+
+
+l=[[1,2],[3,4],[5]]
+l1=[]
+
+for i in range(len(l)):
+    for j in l[i]:
+        l1.append(j)
+
+print(l1)
