@@ -277,3 +277,36 @@ words_starting_with_a = [word for word in sentence.split() if word.lower().start
 print(words_starting_with_a)
 
 """
+
+
+"""
+# 21. Remove duplicates from a list without using set()
+
+numbers = [4, 2, 7, 2, 4, 9, 1, 7, 5, 9]
+num_dup = []
+
+for i in numbers:
+    if i not in num_dup:
+        num_dup.append(i)
+
+print(num_dup)
+
+"""
+
+
+"""
+# 22. Rotate a list right by k steps (e.g. [1,2,3,4,5], k=2  [4,5,1,2,3])
+
+l=[14, 22, 7, 39, 18, 5, 11]
+k=3
+j=-(k)
+for i in range(k):
+    
+    print(l[j])
+    l.insert(i,l[j])
+    l.pop(j)
+    j+=1
+
+print(l)
+
+"""
