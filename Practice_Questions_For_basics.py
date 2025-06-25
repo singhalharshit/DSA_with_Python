@@ -363,3 +363,21 @@ print(rev_num)
 
 """
 
+
+"""
+# 25. Find the frequency of each element and store it in a dictionary.
+
+my_list = [4, 2, 4, 5, 2, 3, 4, 3, 5, 1]
+d={}
+
+for i in range(len(my_list)):
+    if my_list[i] in d:
+        d[my_list[i]] +=1
+    else:
+        d[my_list[i]] =1
+
+print(d)
+
+"""
+
+

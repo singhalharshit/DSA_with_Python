@@ -7,7 +7,6 @@
 
 sample_list = [4, 2, 7, 4, 9, 2, 7, 4, 1, 3, 9, 2, 6, 7, 3]
 frequency_map ={}
-count = 0
 for i in range(0,len(sample_list)):
     if sample_list[i] in frequency_map:
         frequency_map[sample_list[i]]+=1
