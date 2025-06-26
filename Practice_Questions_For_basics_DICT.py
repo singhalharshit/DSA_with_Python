@@ -321,3 +321,53 @@ for i in data:
 print(d)
 
 """
+
+
+"""
+# 17. Group words by their first letter using a dictionary.
+
+words = ['apple', 'ant', 'banana', 'ball', 'cat', 'car', 'dog']
+d={}
+
+for i in words:
+    if i[0] not in d:
+        d[i[0]] = []
+    d[i[0]].append(i)
+    
+print(d)
+
+"""
+
+"""
+# 18. Convert a list of tuples to a dictionary.
+
+data = [('a', 1), ('b', 2), ('c', 3)]
+d={}
+
+for i in data:
+    d[i[0]]=i[1]
+
+print(d)
+"""
+
+"""
+# 19. Find the key with the maximum value.
+
+marks = {
+    'Math': 88,
+    'English': 76,
+    'Science': 91,
+    'History': 67
+}
+max_key1 = max(marks, key=marks.get)
+print(max_key1)
+
+max_value = 0
+max_key =''
+for i in marks:
+    if marks[i]>max_value:
+        max_value = marks[i]
+        max_key = i
+        
+print(max_key)
+"""
