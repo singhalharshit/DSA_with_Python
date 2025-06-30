@@ -371,3 +371,45 @@ for i in marks:
         
 print(max_key)
 """
+
+
+"""
+
+# 20. Find all keys that have a specific value.
+
+data = {
+    "a": 3,
+    "b": 5,
+    "c": 3,
+    "d": 7,
+    "e": 5,
+    "f": 9
+}
+
+target_value = 5
+l=[]
+
+for i in data:
+    if data[i]==target_value:
+        l.append(i)
+    
+print(l)
+
+"""
+
+
+# 21. Create a nested dictionary representing student records (name, marks, grade). - didn't got the ask 
+
+
+# 22. Access and update nested values in a dictionary.
+
+students = {
+    "student1": {"name": "Alice", "marks": 85, "grade": "A"},
+    "student2": {"name": "Bob", "marks": 76, "grade": "B"},
+    "student3": {"name": "Charlie", "marks": 92, "grade": "A"},
+    "student4": {"name": "David", "marks": 64, "grade": "C"}
+}
+
+for key,value in students.items():
+    if value.keys() == 'marks':
+        
