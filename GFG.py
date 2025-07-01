@@ -153,8 +153,28 @@ Note: Please go through the range function to understand why it's useful in for 
 
 """
 
+
+"""
 def multiplicationTable(N):
     for i in range(1,11):
         print(N*i,end=" ")
 
 multiplicationTable(6)
+
+"""
+
+
+"""
+Given a number x, the task is to print the from x to 0 in decreasing order in a single line.
+
+"""
+
+"""
+def printInDecreasing(x):
+    while (x >= 0):
+        print(x ,end= " ")
+        x -= 1
+
+printInDecreasing(10)
+"""
+
