@@ -178,3 +178,75 @@ def printInDecreasing(x):
 printInDecreasing(10)
 """
 
+
+"""
+You are given a string str, you need to print its characters at even indices(index starts at 0)
+
+"""
+
+"""
+def stringJumper(str):
+    for i in range(0,len(str),2): 
+        print(
+            str[i],
+            end="")  
+        
+        
+stringJumper("Geeks")
+"""
+
+
+"""
+Given name of a person, the task is to welcome the person by printing the name with "Welcome". If name is "John", you should print "Welcome John".
+"""
+
+
+"""
+def welcomeAboard(name):
+    print("Welcome"+' '+name)  
+
+
+welcomeAboard("Jhon")
+"""
+
+
+
+"""
+Given a tuple arr , print "True" if all elements of tuple are different otherwise print "False".
+"""
+
+"""
+arr=(1,2,3,4,5)
+
+arr = tuple(map(int, input().split()))
+print(len(set(arr)) == len(arr))
+
+"""
+
+
+"""
+Given a string of braces named bound_by, and a string named tag_name. The task is to print a new string such that tag_name is in the middle of bound_by.
+"""
+
+
+
+"""def join_middle(bound_by, tag_name):
+  return bound_by[0 :(len(bound_by)//2)    ] + tag_name + bound_by[(len(bound_by)//2):  ]
+
+print(join_middle('<>','tag'))
+"""
+
+
+"""
+Given a string S, the task is to determine whether the string starts and ends with the characters 'gfg' (case insensitive). In order to complete this task, you need to utilize the string functions S.lower(), S.upper(), S.startswith('string2'), and S.endswith('string2'). By using these functions, you can check if the given string S meets the specified conditions of starting and ending with 'gfg'.
+"""
+
+def gfg(S):
+    b = S.lower()
+    if (b.startswith("gfg") and b.endswith("gfg")):
+        print("Yes")
+    else:
+        print("No")
+
+    
+gfg('GgfhTnagfg')
