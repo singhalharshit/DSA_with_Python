@@ -241,6 +241,9 @@ print(join_middle('<>','tag'))
 Given a string S, the task is to determine whether the string starts and ends with the characters 'gfg' (case insensitive). In order to complete this task, you need to utilize the string functions S.lower(), S.upper(), S.startswith('string2'), and S.endswith('string2'). By using these functions, you can check if the given string S meets the specified conditions of starting and ending with 'gfg'.
 """
 
+
+
+"""
 def gfg(S):
     b = S.lower()
     if (b.startswith("gfg") and b.endswith("gfg")):
@@ -250,3 +253,42 @@ def gfg(S):
 
     
 gfg('GgfhTnagfg')
+"""
+
+"""
+In this question, we'll take a look at inbuilt string methods like title(), swapcase(), find(), strip().
+You'll be given a string str and x, you'll perform various operations on them.
+
+"""
+
+"""
+def trim(str):
+    return str.strip()
+
+
+def exists(str, x):
+    return str.find(x)
+
+
+def titleIt(str):
+    return str.capitalize()
+
+
+def casesSwap(str):
+    if str.islower() == True:
+        return str.upper()
+"""
+
+
+"""
+Given a tuple arr with distinct elements and an integer x, find the index position of x. Assume to have x in the tuple always. Print the index (0-based).
+"""
+
+
+arr = tuple(map(int, input().split()))
+x = int(input())
+
+arr = (1, 2, 3, 4, 5)
+x = 3
+
+print(arr.index(x))
